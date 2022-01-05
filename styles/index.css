@@ -52,6 +52,13 @@ body {
     transition-duration: var(--global-transition-delay);
 }
 
+#programming-gif {
+    width: 178px;
+    height: 100px;
+    border: 5px solid hsl(0, 0%, 82%);
+    border-radius: 10%;
+}
+
 .link-icon {
     width: 10vh;
     height: 10vh;
@@ -60,11 +67,4 @@ body {
 
 .link-icon:hover {
     scrollbar-shadow-color: #292929;
-}
-
-#programming-gif {
-    width: 178px;
-    height: 100px;
-    border: 5px solid hsl(0, 0%, 82%);
-    border-radius: 10%;
 }
