@@ -11,8 +11,7 @@ body {
 }
 
 .section-content-container {
-    height: 90%;
-    width: 90%;
+    padding: 5%;
     border-radius: 20px;
     background-color: #292929;
     margin: 5%;
@@ -20,6 +19,10 @@ body {
 }
 
 .section-content {
+    padding: 1%;
+}
+
+.section-content-part {
     width: 80%;
     margin-left: 10%;
     text-align: center;
