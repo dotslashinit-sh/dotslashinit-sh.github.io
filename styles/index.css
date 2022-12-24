@@ -1,80 +1,111 @@
 body {
-    --foreground-color: #F5F5F6;
-    --top-bar-color: #21C995;
-    --copyright-color: var(--foreground-color);
-
-    background-color: #21C995;
+    background-color: var(--bg-color);
     margin: 0px;
     justify-items: center;
     align-items: center;
+    font-family: "Klee One", sans-serif;
+    font-size: 2rem;
+}
+
+/*Make anchors look like normal text*/
+a {
+    text-decoration: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+/*Default text color*/
+p, a, h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-dark);
 }
 
 #welcome-text-container {
     display: flex;
     margin: auto;
-    width: 600px;
+    width: 35rem;
+    height: fit-content;
     margin-top: auto;
 }
 
 #welcome-text-content1 {
-    width: 250px;
-    padding: 0px 10px 0px 0px;
-    color: var(--foreground-color);
+    min-width: 49%;
+    padding: 0px 1rem 0px 0px;
+    color: var(--text-color);
     font-family: "Patrick Hand", fantasy;
-    font-size: 86px;
-    text-justify: distribute;
+    font-size: 6rem;
     text-transform: uppercase;
+    text-align: right;
 }
 
 #welcome-text-content2 {
-    width: 250px;
-    padding: 35px 0px 0px 10px;
-    color: var(--foreground-color);
-    font-family: "Klee One", sans-serif;
-    font-size: 32px;
+    min-width: 49%;
+    /* padding: 35px 0px 0px 10px; */
+    color: var(--text-color);
+    font-size: 2.8rem;
+    text-align: left;
 }
 
 #top-bar {
-    --top-bar-width: calc(100vw - 14px);
-    width: var(--top-bar-width);
-    height: 64px;
-    background-color: var(--top-bar-color);
+    /* width: calc(100vw - 2rem); */
+    width: 100%;
+    height: 4rem;
+    background-color: var(--main-color);
     position: sticky;
-    top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    /* padding: 0.5rem; */
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0rem 0rem 1rem 0rem;
 }
 
 #top-bar-contents {
-    width: var(--top-bar-width - 4px);
-    margin-left: 2px;
-    margin-right: 2px;
+    position: relative;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
     align-items: center;
     display: flex;
     list-style-type: none;
     justify-items: center;
+    height: 2rem;
+    display: flex;
 }
 
 .top-bar-element {
-    margin: 5px;
+    margin: auto;
     font-family: "Klee One", sans-serif;
-    color: var(--foreground-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    display: flex;
 }
 
 .top-bar-button {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
+}
+
+.top-bar-element-a {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    font-weight: bolder;
 }
 
 #copyright-text {
-    position: fixed;
-    right: 5px;
-    color: var(--copyright-color);
+    justify-self: right;
+    margin-left: auto;
+    color: var(--text-color);
 }
 
 #external-links-container {
-    width: 100%;
-    text-align: center; /*For some reason, icons have to be aligned this way.*/
+    margin: auto;
+    width: 90%;
+    height: 6rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .contact-button-lnk {
@@ -83,7 +114,14 @@ body {
 }
 
 .contact-button-img {
-    width: 48px;
-    height: 48px;
-    filter: invert(90%);
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    transition-duration: 0.2s;
+}
+
+.contact-button-img:hover {
+    margin: 0.9rem;
+    width: 3.2rem;
+    height: 3.2rem;
 }
