@@ -2,7 +2,6 @@ body {
     background-color: var(--bg-color);
     margin: 0px;
     justify-items: center;
-    align-items: center;
     font-family: "Klee One", sans-serif;
     font-size: 2rem;
 }
@@ -24,30 +23,33 @@ a:hover {
 }
 
 #welcome-text-container {
-    display: flex;
     margin: auto;
-    width: 35rem;
     height: fit-content;
     margin-top: auto;
+    display: flex;
+    width: 35rem;
 }
 
 #welcome-text-content1 {
-    min-width: 49%;
-    padding: 0px 1rem 0px 0px;
     color: var(--text-color);
     font-family: "Patrick Hand", fantasy;
-    font-size: 6rem;
     text-transform: uppercase;
+    width: 49%;
+    padding: 0px 1rem 0px 0px;
+    font-size: 6rem;
     text-align: right;
 }
 
 #welcome-text-content2 {
-    min-width: 49%;
-    /* padding: 35px 0px 0px 10px; */
+    color: var(--text-color);
+    font-size: 2.8rem;
+    width: 49%;
     color: var(--text-color);
     font-size: 2.8rem;
     text-align: left;
 }
+
+
 
 #top-bar {
     /* width: calc(100vw - 2rem); */
@@ -130,4 +132,29 @@ a:hover {
 .contact-button-img:hover {
     width: 3.2rem;
     height: 3.2rem;
+}
+
+@media screen and (max-width:700px) {
+    #welcome-text-container {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    
+    #welcome-text-content1 {
+        width: 100%;
+        padding: 1rem;
+        font-size: 6rem;
+        text-align: center;
+    }
+    
+    #welcome-text-content2 {
+        width: 100%;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .top-bar-element {
+        font-size: 0.8rem;
+    }
 }
