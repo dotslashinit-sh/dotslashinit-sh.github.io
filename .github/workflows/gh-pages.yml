@@ -34,4 +34,4 @@ jobs:
     steps:
       - name: Publish to github pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
