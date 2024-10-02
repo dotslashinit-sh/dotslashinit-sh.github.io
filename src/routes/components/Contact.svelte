@@ -8,15 +8,15 @@
         <ContactButton url="https://github.com/dotslashinit-sh" icon="github">GitHub</ContactButton>
     </li>
     <li>
-        <ContactButton url="Hackerrank" icon="hackerrank">Hackerrank</ContactButton>
+        <ContactButton url="https://www.hackerrank.com/profile/dotslashconfig" icon="hackerrank">Hackerrank</ContactButton>
     </li>
     <li>
-        <ContactButton url="https://linkedin.com/" icon="linkedin">LinkedIn</ContactButton>
+        <ContactButton url="https://www.linkedin.com/in/abhin-raj/" icon="linkedin">LinkedIn</ContactButton>
     </li>
     <li>
         <ContactButton url="mailto:abinr5502@gmail.com" icon="gmail">E-Mail</ContactButton>
     </li>
     <li>
-        <ContactButton url="https://discord.com/" icon="discord">Discord</ContactButton>
+        <ContactButton url="https://discord.com/users/853527642652409866" icon="discord">Discord</ContactButton>
     </li>
 </ul>

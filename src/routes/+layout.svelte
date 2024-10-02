@@ -1,6 +1,6 @@
 <script>
     import '../app.css'
-
+    
 </script>
 
 <div class="flex content-center flex-col">
