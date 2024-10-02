@@ -24,7 +24,7 @@ jobs:
           path: ${{ github.workspace }}/build
   deploy:
     environment:
-      name: Deployment
+      name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
     permissions:
       pages: write
@@ -33,4 +33,5 @@ jobs:
     needs: build
     steps:
       - name: Publish to github pages
+        id: deployment
         uses: actions/deploy-pages@v4
